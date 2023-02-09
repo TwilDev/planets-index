@@ -6,7 +6,7 @@ const RouterWrappper = () => {
 
   const planetRoutes = useRoutes([
     {
-      path: "/",
+      path: "/planets-index",
       element: <Dashboard />,
     },
     { path: "/mercury", element: <Planet /> },

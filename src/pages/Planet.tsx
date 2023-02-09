@@ -13,7 +13,7 @@ export const Planet = () => {
     // const image = getPlanetData(planetPath)
 
     const getPlanetData = async (planetName: string) => {
-      console.log(planet)
+      
       let planetDetails = planetData.find(el => el.name === planetName)
       let mainImage = await axios.get(`https://images-api.nasa.gov/asset/${planetDetails?.mainImageId}`).then((res) => {
         return res.data.collection.items[0].href
